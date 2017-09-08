@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:id="@+id/keyboard_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/keyboard_container"
+            android:elevation="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CECECE" />
+
+            <ImageView
+                android:id="@+id/emoji_open_close_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackground"
+                android:padding="6dp"
+                android:src="@mipmap/ic_emoticon"
+                android:tint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/emoji_send_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackground"
+                android:padding="6dp"
+                android:src="@mipmap/ic_action_name"
+                android:tint="@color/colorPrimary" />
+
+            <manhnd.com.demoemotiongif.keyboard.widget.EmoticonEditText
+                android:id="@+id/selected_emoticons_et"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/emoji_open_close_btn"
+                android:layout_toLeftOf="@id/emoji_send_btn"
+                android:layout_toRightOf="@id/emoji_open_close_btn"
+                android:layout_toStartOf="@id/emoji_send_btn"
+                android:background="@drawable/bg_search"
+                android:padding="10dp"
+                app:emojiconSize="30sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_container"
+            android:background="#ffffff"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <manhnd.com.demoemotiongif.keyboard.widget.EmoticonTextView
+                    android:id="@+id/selected_emoticons_tv"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    app:emojiconSize="30sp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/selected_git_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/emojis_tab"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:layout_alignParentTop="true"
+    android:background="@color/background_dark"
+    android:elevation="2dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/emojis_tab_0_recents"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:tint="#616161"
+        android:src="@mipmap/emoji_recent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/emojis_tab_1_people"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_1f600"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/emojis_tab_2_nature"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_1f43b"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/emojis_tab_3_food"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_1f354"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/emojis_tab_4_sport"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_26bd"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/emojis_tab_5_cars"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_1f696"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/emojis_tab_6_elec"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_1f4a1"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/emojis_tab_7_sym"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_2764"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/emojis_tab_8_flag"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/image_btn_padding"
+        android:src="@drawable/emoji_messenger_1f1fb_1f1f3"
+        android:tint="@color/colorPrimary"
+        tools:ignore="ContentDescription" />
+</LinearLayout>
